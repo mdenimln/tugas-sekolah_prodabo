@@ -184,7 +184,7 @@ int main() {
         cout<<"\t|  mendapatkan   makanan  dan  minuman  serta  kerajinan  berupa           |"<<endl;
         cout<<"\t|  souvenir  hinnga  aksesoris  Khas Bogor.                                |"<<endl;
         cout<<"\t|                                                                          |"<<endl;
-        cout<<"\t|  Dan Kami Sangat Siap Melayani Anda...                                   |"<<endl;
+        cout<<"\t|  Kami  Siap Melayani Anda...                                   |"<<endl;
         cout<<"\t|                                                                          |"<<endl;
         cout<<"\t|  # PILIHAN PRODUK KHAS BOGOR & UNGGULAN BOGOR YANG WAJIB DIKUNJUNGI      |"<<endl;
         cout<<"\t|      _____________________________________________________________       |"<<endl;
