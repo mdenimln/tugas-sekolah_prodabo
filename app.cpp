@@ -184,7 +184,7 @@ int main() {
         cout<<"\t|  mendapatkan   makanan  dan  minuman  serta  kerajinan  berupa           |"<<endl;
         cout<<"\t|  souvenir  hinnga  aksesoris  Khas Bogor.                                |"<<endl;
         cout<<"\t|                                                                          |"<<endl;
-        cout<<"\t|  Kami  Siap Melayani Anda...                                   |"<<endl;
+        cout<<"\t|  Kami  Siap Melayani Anda...                                             |"<<endl;
         cout<<"\t|                                                                          |"<<endl;
         cout<<"\t|  # PILIHAN PRODUK KHAS BOGOR & UNGGULAN BOGOR YANG WAJIB DIKUNJUNGI      |"<<endl;
         cout<<"\t|      _____________________________________________________________       |"<<endl;
@@ -337,58 +337,58 @@ int main() {
                         case 15 :
                             produk_di_beli[pus] = makanan[14];
                             harga[pus] = harga_makanan[14];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Asinan khas Bogor anda berhasil di tambahkan                    |"<<endl;
                             break;
                             // ==== kondisi ketika pilih minuman
                         case 16 :
                             produk_di_beli[pus] = minuman[0];
                             harga[pus] = harga_minuman[0];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Bajigur khas Bogor anda berhasil di tambahkan                   |"<<endl;
                             break;
                         case 17 :
                             produk_di_beli[pus] = minuman[1];
                             harga[pus] = harga_minuman[1];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Bir Kotjok anda berhasil di tambahkan                           |"<<endl;
                             break;
                         case 18 :
                             produk_di_beli[pus] = minuman[2];
                             harga[pus] = harga_minuman[2];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Bandrek anda berhasil di tambahkan                              |"<<endl;
                             break;
                         case 19 :
                             produk_di_beli[pus] = minuman[3];
                             harga[pus] = harga_minuman[3];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Cendol anda berhasil di tambahkan                               |"<<endl;
                             break;
                         case 20 :
                             produk_di_beli[pus] = minuman[4];
                             harga[pus] = harga_minuman[4];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Es Goyobod anda berhasil di tambahkan                           |"<<endl;
                             break;
                         case 21 :
                             produk_di_beli[pus] = minuman[5];
                             harga[pus] = harga_minuman[5];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Es Doger anda berhasil di tambahkan                             |"<<endl;
                             break;
                         case 22 :
                             produk_di_beli[pus] = minuman[6];
                             harga[pus] = harga_minuman[6];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Es Oyen khas Bogor anda berhasil di tambahkan                   |"<<endl;
                             break;
                         case 23 :
                             produk_di_beli[pus] = minuman[7];
                             harga[pus] = harga_minuman[7];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Es Sekoteng khas Bogor anda berhasil di tambahkan               |"<<endl;
                             break;
                         case 24 :
                             produk_di_beli[pus] = minuman[8];
                             harga[pus] = harga_minuman[8];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan es Cincau Hijau anda berhasil di tambahkan                      |"<<endl;
                             break;
                         case 25 :
                             produk_di_beli[pus] = minuman[9];
                             harga[pus] = harga_minuman[9];
-                            cout<<"\t|  pesanan Asinan Bogor anda berhasil di tambahkan                         |"<<endl;
+                            cout<<"\t|  pesanan Es Pala khas Bogor anda berhasil di tambahkan                   |"<<endl;
                             break;
                         
                         case 26 :
