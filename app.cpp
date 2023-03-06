@@ -48,17 +48,17 @@ void head_nota(int id_nota){
     enter();
 }
 void struk_cash(int item, int total_sebelumnya, int diskon,int total, string metode, int user_bayar,int kembalian){
-    cout<<"\t Total item       :    "<<item<<"                        Rp. "<<total_sebelumnya<<endl;
+    cout<<"\t Total item       :    "<<item<<"                       Rp. "<<total_sebelumnya<<endl;
     enter();
-    cout<<"\t Total diskon     :                             Rp. "<<diskon<<endl;
+    cout<<"\t Total diskon     :                            Rp. "<<diskon<<endl;
     enter();
-    cout<<"\t Total pembayaran :                             Rp. "<<total<<endl;
+    cout<<"\t Total pembayaran :                            Rp. "<<total<<endl;
     enter();
     cout<<"\t Metode pembayaran     "<<metode<<endl;
     enter();
-    cout<<"\t Uang Tunai       :                             Rp. "<<user_bayar<<endl;
+    cout<<"\t Uang Tunai       :                            Rp. "<<user_bayar<<endl;
     enter();
-    cout<<"\t Uang Kembalian   :                             Rp. "<<kembalian<<endl;
+    cout<<"\t Uang Kembalian   :                            Rp. "<<kembalian<<endl;
     enter();
     cout<<"\t ________________________________________________________ "<<endl;
     cout<<"\t Tgl              14-02-2023 "<<endl;
@@ -140,7 +140,7 @@ int main() {
 
     // 
     int isi = 0;
-    string voucer,kode;
+    string voucer,voucer1,kode;
     string jawab_quiz;
 
     // variable pemilihan
@@ -578,6 +578,27 @@ int main() {
                             goto quiz_salah;
                         }
                         break;
+                    case 2:
+                        cout<<"\t|      _____________________________________________________________       |"<<endl;
+                        cout<<"\t|     |   QD                                                        |      |"<<endl;
+                        cout<<"\t|     |      Bogor terletak di wilayah yang dikelilingi oleh        |      |"<<endl;
+                        cout<<"\t|     |      3 Gunung yaitu Gunung Gede, Gunung Pangrango,          |      |"<<endl;
+                        cout<<"\t|     |      dan Gunung Salak. Dengan ini Bogor terkenal            |      |"<<endl;
+                        cout<<"\t|     |      dengan julukan Kota .. ?                               |      |"<<endl;
+                        cout<<"\t|     |_____________________________________________________________|      |"<<endl;
+                        cout<<"\t|      jawaban anda  ?.. ";cin>> jawab_quiz;
+                        if(jawab_quiz == "hujan" || jawab_quiz == "Hujan"){
+                            
+                            voucer = "7YD1S1";
+                            cout<<"\t|      _____________________________________________________________       |"<<endl;
+                            cout<<"\t|      SELAMAT Jawaban kamu benar                                          |"<<endl; 
+                            cout<<"\t|      kamu berhak mendapatkan hadiah voucer                               |"<<endl; 
+                            cout<<"\t|      Kode vocher  | "<<voucer<<" |                                             |"<<endl; 
+                            cout<<"\t|      _____________________________________________________________       |"<<endl; 
+                        } else{
+                            goto quiz_salah;
+                        }
+                        break;
                     
                     default:
                         cout<<"\t|      _____________________________________________________________       |"<<endl;
@@ -677,6 +698,8 @@ int main() {
         string dinding = "     |  |"; 
         if(total > 100000){
             dinding = "    |  |"; // ketika total > dari 100000 maka dinding nya tambah spasi
+        }else if(total < 10000){
+            dinding = "      |  |"; // ketika total > dari 100000 maka dinding nya tambah spasi
         }
         cout<<"\t|  |                                                 |                  |  |"<<endl;
         cout<<"\t|  |                     TOTAL                       |     Rp "<<total<<dinding<<endl;
@@ -691,29 +714,26 @@ int main() {
         if(toupper(pilih) == 'Y'){
             masukan_vocher:
             cout<<"\t|   Masukan voucher discon kamu : ";cin>> kode;
+            if (kode == " "){
+
+                goto gagal;
+            }
             if(kode == voucer){
                 cout<<"\t|   Berhasil..                                                             |"<<endl;
-                if (total <= 10000){
-                    diskon = 5000;
-                    total -= diskon;
-                }else if(total <= 20000){
-                    diskon = 10000;
-                    total -= diskon;
-                }else if(total <= 50000){
-                    diskon = 20000;
-                    total -= diskon;
-                }else if(total <= 100000){
-                    diskon = 40000;
-                    total -= diskon;
-                }else if(total > 100000){
-                    diskon = 70000;
-                    total -= diskon;
+                diskon = total * 20 /100;
+                total -= diskon;
+                voucer = " ";
+                if(total > 100000){
+                    dinding = "    |  |"; // ketika total > dari 100000 maka dinding nya 9 line
+                }else if(total < 10000){
+                    dinding = "      |  |"; // ketika total < dari 10000 maka dinding nya 11 line
                 }
                 cout<<"\t|   ____________________________________________________________________   |"<<endl;
                 cout<<"\t|  |                                                 |                  |  |"<<endl;
                 cout<<"\t|  |                     TOTAL                       |     Rp "<<total<<dinding<<endl;
                 cout<<"\t|  |_________________________________________________|__________________|  |"<<endl; 
             } else{
+                gagal:
                 cout<<"\t|   GAGAL..                                                                |"<<endl;
                 cout<<"\t|   Kode vocher salah !!                                                   |"<<endl;
                 cout<<"\t                                                                            "<<endl;
